@@ -30,7 +30,7 @@
 
                     $.ajax({
                         url: "studentservice.asmx/GetStudentNames",
-                        data: "{ 'searchItem': '" + request.term + "' }",
+                        data: "{ 'searchItem':  ' }",
                         type: "POST",
                         dataType: "json",
                         contentType: "application/json;charset=utf-8",

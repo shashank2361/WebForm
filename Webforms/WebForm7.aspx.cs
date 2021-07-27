@@ -248,6 +248,9 @@ namespace Webforms
                         Value = -1,
                         Direction = ParameterDirection.Output
                     };
+
+
+
                     cmd.Parameters.Add(paramNewId);
 
                     con.Open();

@@ -12,7 +12,6 @@ namespace Webforms
         public static List<tblProduct> GetAllProducts()
         {
             List<tblProduct> listProducts = new List<tblProduct>();
-
             string CS = ConfigurationManager.ConnectionStrings["EmployeeDB"].ConnectionString;
             using (SqlConnection con = new SqlConnection(CS))
             {
@@ -25,11 +24,9 @@ namespace Webforms
                     product.Id = Convert.ToInt32(rdr["Id"]);
                     product.Name = rdr["Name"].ToString();
                     product.ProductDescription = rdr["ProductDescription"].ToString();
-
                     listProducts.Add(product);
                 }
             }
-
             return listProducts;
         }
     }

@@ -44,7 +44,8 @@
                                 <asp:TextBox ID="txtSalary" runat="server"
                                     oncopy="return false"
                                     onpaste="return false"
-                                    oncut="return false" onkeydown="return (!((event.keyCode>=65 && event.keyCode <= 95) || event.keyCode >= 106 || (event.keyCode >= 48 && event.keyCode <= 57 && isNaN(event.key))) && event.keyCode!=32);"></asp:TextBox>
+                                    oncut="return false" 
+                                    onkeydown="return (!((event.keyCode>=65 && event.keyCode <= 95) || event.keyCode >= 106 || (event.keyCode >= 48 && event.keyCode <= 57 && isNaN(event.key))) && event.keyCode!=32);"></asp:TextBox>
 
                                 <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
                                     ControlToValidate="txtSalary" runat="server"

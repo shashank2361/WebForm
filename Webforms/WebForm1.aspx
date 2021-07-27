@@ -138,7 +138,7 @@
                         <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
                         <br />
                         Date Avaliable 
-                        <asp:TextBox ID="txtDateAvailable" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtDateAvailable" type="Date" runat="server"></asp:TextBox>
                         <br />
                         <asp:RangeValidator ID="RangeValidatorDateAvailable" runat="server"
                             ErrorMessage="Date must be between 01/01/2012 & 31/12/2012"
